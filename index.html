@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS Selectos Cheat-Sheet by Julie Poolie</title>
+        <link href='style.css' rel='stylesheet'>
+    </head>
+    <body>
+    <h1>CSS: Commonly Used Selectors</h1>
+    <div>
+        <p>This table info from
+            <br /><cite>HTML & CSS: Design and Build Web Sites</cite> 
+            <br />by Jon Duckett, pub. 2011</p>
+        <table>
+            <thead>
+            <tr>
+                <th>Selector:</th>
+                <th>Description:</th>
+                <th>Example:</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Universal Selector</td>
+                <td>Applies to all elements in a document</td>
+                <td><span class='example'>* { }</span>
+                <br/><p class='note'>targets all elements on the page</p></td>
+            </tr>
+            <tr>
+                <td>Type Selector</td>
+                <td>Matches element names</td>
+                <td><span class='example'>h1, h2, h3 { }</span>
+                <br/><p class='note'>targets the &lt;h2&gt;, &lt;h2&gt;, and &lt;h3&gt; elements</p></td>
+            </tr>
+            <tr>
+                <td>Class Selector</td>
+                <td>Matches an element whose class attribute has a value that matches the one specified after the period</td>
+                <td><span class='example'>.note { }</span>
+                <br/><p class='note'>targets any element whose class attribute is note</p>
+                <br/><span class='example'>p.note { }</span>
+                <br/><p class='note'>targets only &lt;p&gt; elements whose class attribute is note</p></td>
+            </tr>
+            <tr>
+                <td>ID Selector</td>
+                <td>Matches an element whose ID attribute has a value that matches the one specified after the pound or has sign</td>
+                <td><span class='example'>#introduction { }</span>
+                <br/><p class='note'>targets the element whose ID attribute has the value of introduction</p></td>
+            </tr>
+            <tr>
+                <td>Child Selector</td>
+                <td>Matches an element that is a direct child of another</td>
+                <td><span class='example'>li&gt;a { }</span>
+                <br/><p class='note'>targets any &lt;a&gt; elements that are children of a &lt;li&gt; element, but not other &lt;a&gt; elements on the page</p></td>
+            </tr>
+            <tr>
+                <td>Decendeant Selector</td>
+                <td>Matches an element that is a decendant of another specified element (not just a direct child)</td>
+                <td><span class='example'>p a { }</span>
+                <br/><p class='note'>targets any &lt;a&gt; elements that sit inside a &lt;p&gt; element, even if there are other elements nested between them</p></td>
+            </tr>
+            <tr>
+                <td>Adjacent Sibling Selector</td>
+                <td>Matches an element that is the next sibling of another</td>
+                <td><span class='example'>h1 + p { }</span>
+                <br/><p class='note'>targets the first &lt;p&gt; element adter any &lt;h1&gt; element, but not other &lt;p&gt; elements</p></td>
+            </tr>
+            <tr>
+                <td>General Sibling Selector</td>
+                <td>Targets an element that is a sibling of another, although it does not have to be the directly preceding element</td>
+                <td><span class='example'>h1~p { }</span>
+                <br/><p class='note'>if you had two &lt;p&gt; elements that are siblings of an &lt;h1&gt; element, this rule would apply to both</p></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    </body>
+</html>

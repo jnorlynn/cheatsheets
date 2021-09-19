@@ -1,0 +1,22 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+thead {
+    background-image: url(images/desk.jpg);
+    font-size: xx-large;
+    color: seashell;
+}
+
+.example {
+    color: purple;
+}
+
+.note {
+    font-size: small;
+}
+
+tr:nth-child(even) {
+    background-color: linen;
+}
+
