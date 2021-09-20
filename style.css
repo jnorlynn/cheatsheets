@@ -20,3 +20,6 @@ tr:nth-child(even) {
     background-color: linen;
 }
 
+td {
+    padding: 20px;
+}
